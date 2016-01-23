@@ -1,0 +1,67 @@
+common: &common
+  facebook:
+    host: https://graph.facebook.com
+  sso:
+    host: https://sso.xx.com
+
+dev: &dev
+  <<: *common
+  panda:
+    host: http://dev-panda.xx.com
+  turtle:
+    host: https://dev-accounts.xx.com
+    client_id: client_id_123
+    secret_key: secret_key
+  snake:
+    host: http://dev-snake.xx.com
+    api_key: api_key
+  monkey:
+    host: http://dev-monkey.xx.com
+    api_key: api_key
+  dragon:
+    host: http://dev-dragon.xx.com
+  rhino:
+    host: http://dev-rhino.xx.com:8080
+  zebra:
+    host: http://dev-zebra.xx.com
+  database:
+    turtle:
+      adapter: oracle
+      database: dev-db.xx.com
+    panda:
+      adapter: oracle
+      database: dev-db.xx.com
+    monkey:
+      adapter: oracle
+      database: dev-db.xx.com
+
+qa: &qa
+  <<: *common
+  panda:
+      host: http://qa-panda.xx.com
+    turtle:
+      host: https://qa-accounts.xx.com
+      client_id: client_id_123
+      secret_key: secret_key
+    snake:
+      host: http://qa-snake.xx.com
+      api_key: api_key
+    monkey:
+      host: http://qa-monkey.xx.com
+      api_key: api_key
+    dragon:
+      host: http://qa-dragon.xx.com
+    rhino:
+      host: http://qa-rhino.xx.com:8080
+    zebra:
+      host: http://qa-zebra.xx.com
+    database:
+      turtle:
+        adapter: oracle
+        database: qa-db.xx.com
+      panda:
+        adapter: oracle
+        database: qa-db.xx.com
+      monkey:
+        adapter: oracle
+        database: qa-db.xx.com

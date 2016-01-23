@@ -1,0 +1,13 @@
+== TEST API AUTOMATION
+
+GIT SSH
+### REDACTED ####
+
+== DESCRIPTION:
+
+Integration tests at the api level for various features.
+
+== 3RD PARTY DOCUMENTATION:
+minitest | http://docs.seattlerb.org/minitest/
+net http | http://ruby-doc.org/stdlib-1.9.3/libdoc/net/http/rdoc/Net/HTTP.html
+gmail    | https://github.com/gmailgem/gmail
